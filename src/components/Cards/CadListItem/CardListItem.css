@@ -1,0 +1,15 @@
+.CardList__Item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 1.4rem;
+}
+
+.CardList__Item:hover {
+    cursor: pointer;
+}
+
+.CardList__Item__Content {
+    padding: 1rem;
+}
