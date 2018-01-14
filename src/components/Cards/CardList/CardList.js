@@ -1,5 +1,4 @@
 import React from 'react';
-import { shuffle } from 'lodash-es';
 
 import Card from '../CadListItem/CardListItem';
 import classes from './CardList.css';
