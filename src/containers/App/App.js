@@ -6,16 +6,16 @@ import CurrentCard from '../../components/Cards/CurrentCard/CurrentCard';
 import classes from './App.css';
 
 const cards = [
-  '0', '1/2', '1', '2', '3', '5', '8', '13', '20', '40', '100', '?', 'Café',
+  '0', '1/2', '1', '2', '3', '5', '8', '13', '20', '40', '100', '?', '☕',
 ];
 
 class App extends Component {
 
   constructor(props) {
     super(props);
-    
+
     this.state = { currentCard: null, cards };
-    
+
     this.revealCard = this.revealCard.bind(this);
     this.resetBoard = this.resetBoard.bind(this);
   }

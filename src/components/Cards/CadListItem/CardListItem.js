@@ -4,11 +4,12 @@ import PropTypes from 'prop-types';
 import classes from './CardListItem.css';
 
 const card = (props) => {
-    return (
-        <div className={`${classes.CardList__Item} card`} onClick={() => props.onReveal(props.value)}>
-            <div className={`card-content ${classes.CardList__Item__Content}`}>{props.value}</div>
-        </div>
-    );
+  return (
+    <div className={`${classes.CardList__Item} card`} onClick={() => props.onReveal(props.value)}>
+      <div className={classes.CardList__ItemOverlay}></div>
+      <div className={`card-content ${classes.CardList__Item__Content}`}>{props.value}</div>
+    </div>
+  );
 };
 
 card.propTyps = {

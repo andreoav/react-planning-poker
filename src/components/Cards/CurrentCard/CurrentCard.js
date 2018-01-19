@@ -6,7 +6,9 @@ const animation = 'animated flipInY';
 
 const currenCard = props => {
   return (
-    <div className={`${classes.CurrentCard} ${animation}`} onClick={props.onReset}>{props.value}</div>
+    <div className={`${classes.CurrentCard} ${animation}`} onClick={props.onReset}>
+      <span className={classes.CurrentCard__Value}>{props.value}</span>
+    </div>
   );
 };
 
